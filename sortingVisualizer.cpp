@@ -132,51 +132,49 @@ void sortArray(int n)
             {
                 system("CLS");
                 swap(a[i], a[j]);}
-            //     for (int k = 0; k < n; k++)
-            //     {
-            //         for (int l = 0; l < a[k]; l++)
-            //         {
-            //             if(k<i)
-            //             {
-            //                 SetConsoleTextAttribute(h, 10);                         
-            //                 printf("%c", 219);
-            //                 if (l == a[k] - 1)
-            //                     cout << l+1;
-            //             }
-            //             if(k==i)
-            //             {
-            //                 SetConsoleTextAttribute(h, 9);                         
-            //                 printf("%c", 219);
-            //                 if (l == a[k] - 1)
-            //                     cout << l+1;
-            //             }
-            //             else if(k==j)
-            //             {
-            //                 SetConsoleTextAttribute(h, 12);
-            //                 printf("%c", 219);
-            //                 if (l == a[k] - 1)
-            //                     cout << l+1;
-            //             }
-            //             else if(k!=i && k!=j && k>i)
-            //             {
-            //                 SetConsoleTextAttribute(h, 7);
-            //                 printf("%c", 219);
-            //                 if (l == a[k] - 1)
-            //                     cout << l+1;
-            //             }
-            //         }
-            //         cout << endl;
-            //         cout << endl;
+                for (int k = 0; k < n; k++)
+                {
+                    for (int l = 0; l < a[k]; l++)
+                    {
+                        if(k<i)
+                        {
+                            SetConsoleTextAttribute(h, 10);                         
+                            printf("%c", 219);
+                            if (l == a[k] - 1)
+                                cout << l+1;
+                        }
+                        if(k==i)
+                        {
+                            SetConsoleTextAttribute(h, 9);                         
+                            printf("%c", 219);
+                            if (l == a[k] - 1)
+                                cout << l+1;
+                        }
+                        else if(k==j)
+                        {
+                            SetConsoleTextAttribute(h, 12);
+                            printf("%c", 219);
+                            if (l == a[k] - 1)
+                                cout << l+1;
+                        }
+                        else if(k!=i && k!=j && k>i)
+                        {
+                            SetConsoleTextAttribute(h, 7);
+                            printf("%c", 219);
+                            if (l == a[k] - 1)
+                                cout << l+1;
+                        }
+                    }
+                    cout << endl;
+                    cout << endl;
                     
-            //     }
+                }
             //     //makes the execution slow
                 std::this_thread::sleep_for(std::chrono::milliseconds {delay});
                 
             // }
-
         }
-    }
-            
+    }            
 }
 
 //prints the final array;
