@@ -67,7 +67,7 @@ void printArray(int n)
 //printing the intermediate array
 void sortArray(int n)
 {    
-//     int delay = 500;    
+    int delay = 500;    
     int delay;
     if(n<7)
         delay = 100;
